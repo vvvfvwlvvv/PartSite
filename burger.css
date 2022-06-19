@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('Fonts/TTLakes-Regular.eot');
+    src: local('Fonts/TT Lakes Regular'), local('TTLakes-Regular'),
+        url('Fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/TTLakes-Regular.woff') format('woff'),
+        url('Fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('Fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('Fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/TTLakes-Bold.woff') format('woff'),
+        url('Fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes';
+    text-decoration: none;
+    color: black;
+    border: none;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.header, .burger, .footer{
+    width: 320px;
+    background-color: #FFFFFF;
+}
+
+.header, .footer__feedback{
+    display: flex;
+}
+
+.header__menu, .footer__menu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+.header__menu--burger{
+    background-image: url("Icon/cross.svg");
+    margin: 24px 17px 57px 0;
+}
+
+.header__logo{
+    background-image: url("Icon/logo.svg");
+    width: 97px;
+    height: 51px;
+    margin: 19px 0 0 0;
+}
+
+.header__menu--search{
+    background-image: url("Icon/search.svg");
+    margin: 24px 24px 57px 78px;
+}
+
+.footer__feedback, .footer__languages, .footer__about, .header__menu--burger{
+    margin-left: 24px;
+}
+
+.menu__item{
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+.menu__item--active{
+    border-left: 4px solid #41F6D7;
+    color: #7E7E82;
+}
+
+.footer__menu--phone{
+    background-image: url("Icon/phone.svg");
+    margin: 234px 16px 10px 0;
+}
+
+.footer__menu--message{
+    background-image: url("Icon/message.svg");
+    margin: 234px 0 10px 0;
+}
+
+.footer__menu--contact{
+    background-image: url("Icon/Contact.svg");
+    margin: 234px 0 10px 16px;
+}
+
+.footer__about{
+    line-height: 32px;
+}
+
+.footer__phone{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__language{
+    margin-right: 7px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.footer__language--active{
+    color: #7E7E82;
+}
+
+.header__menu:hover, .footer__menu:hover{
+    background-color: #fc0060;
+    transform: scale(1.2);
+}
